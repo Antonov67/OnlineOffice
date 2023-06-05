@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.dashboard.DashboardFragment" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#58D68D"
+            android:textColor="@color/white"
+            android:padding="5dp"
+            android:text="PERSONAL VOLUME" />
+
+        <EditText
+            android:id="@+id/text_personal_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:enabled="false"
+            android:background="#2ECC71"
+            android:textColor="@color/white"
+            android:padding="15dp"
+            android:textSize="25sp"
+            android:gravity="right"
+            android:drawableLeft="@drawable/profile_img"
+            android:inputType="textPersonName"
+            android:text="0 CV" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#33C9B6"
+            android:padding="5dp"
+            android:text="GROUP VOLUME"
+            android:textColor="@color/white" />
+
+        <EditText
+            android:id="@+id/text_group_volume"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#00BCA4"
+            android:drawableLeft="@drawable/baseline_people_alt_24"
+            android:ems="10"
+            android:enabled="false"
+            android:gravity="right"
+            android:inputType="textPersonName"
+            android:padding="15dp"
+            android:text="0 CV"
+            android:textColor="@color/white"
+            android:textSize="25sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#AD71FF"
+            android:padding="5dp"
+            android:text="ACHIEVED RANK"
+            android:textColor="@color/white" />
+
+        <EditText
+            android:id="@+id/text_achieved_rank"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#984DFF"
+            android:drawableLeft="@drawable/baseline_star_24"
+            android:ems="10"
+            android:enabled="false"
+            android:gravity="right"
+            android:inputType="textPersonName"
+            android:padding="15dp"
+            android:text="none"
+            android:textColor="@color/white"
+            android:textSize="25sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#5DADE2"
+            android:padding="5dp"
+            android:text="BONUS WALLET"
+            android:textColor="@color/white" />
+
+        <EditText
+            android:id="@+id/text_bonus_wallet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#3498DB"
+            android:drawableLeft="@drawable/baseline_money_24"
+            android:ems="10"
+            android:enabled="false"
+            android:gravity="right"
+            android:inputType="textPersonName"
+            android:padding="15dp"
+            android:text="0.00"
+            android:textColor="@color/white"
+            android:textSize="25sp" />
+
+    </LinearLayout>
+</LinearLayout>

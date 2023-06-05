@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">OnlineOffice</string>
+    <string name="register_member">Register Member</string>
+    <string name="downline">DownLine</string>
+    <string name="frontline">FrontLine</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="profile">Profile</string>
+</resources>

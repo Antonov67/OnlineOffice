@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_profile">
+
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="com.example.onlineoffice.ui.profile.ProfileFragment"
+        android:label="@string/profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/nav_dashboard"
+        android:name="com.example.onlineoffice.ui.dashboard.DashboardFragment"
+        android:label="@string/dashboard"
+        tools:layout="@layout/fragment_dashboard" />
+
+    <fragment
+        android:id="@+id/nav_frontline"
+        android:name="com.example.onlineoffice.ui.frontline.FrontLineFragment"
+        android:label="@string/frontline"
+        tools:layout="@layout/fragment_front_line" />
+    <fragment
+        android:id="@+id/nav_register_member"
+        android:name="com.example.onlineoffice.ui.register_member.RegisterMemberFragment"
+        android:label="@string/register_member"
+        tools:layout="@layout/fragment_register_member" />
+
+    <fragment
+        android:id="@+id/nav_downline"
+        android:name="com.example.onlineoffice.ui.downline.DownLineFragment"
+        android:label="@string/downline"
+        tools:layout="@layout/fragment_down_line" />
+
+
+
+</navigation>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/profile_img"
+            android:title="@string/profile"/>
+        <item
+            android:id="@+id/nav_dashboard"
+            android:icon="@drawable/baseline_dashboard_24"
+            android:title="@string/dashboard"/>
+        <item
+            android:id="@+id/nav_frontline"
+            android:icon="@drawable/baseline_horizontal_rule_24"
+            android:title="@string/frontline"/>
+        <item
+            android:id="@+id/nav_downline"
+            android:icon="@drawable/baseline_grid_on_24"
+            android:title="@string/downline"/>
+        <item
+            android:id="@+id/nav_register_member"
+            android:icon="@drawable/baseline_person_add_alt_1_24"
+            android:title="@string/register_member"/>
+    </group>
+
+</menu>
