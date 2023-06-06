@@ -11,6 +11,7 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -49,6 +50,8 @@ public class DownLineFragment extends Fragment {
         mViewModel.getDownLine().observe(getViewLifecycleOwner(), new Observer<DownLineResponse>() {
             @Override
             public void onChanged(DownLineResponse downLineResponse) {
+                Log.d("777", downLineResponse.payload.list.toString());
+
                 adapter = new DownLineAdapter(getContext(), downLineResponse);
                 recycler.setAdapter(adapter);
             }

@@ -47,14 +47,19 @@ public class AuthActivity extends AppCompatActivity {
                     call.enqueue(new Callback<TokenResponse>() {
                         @Override
                         public void onResponse(Call<TokenResponse> call, Response<TokenResponse> response) {
-                            Utils.token = response.body().payload.accessToken;
-                            Utils.email = email.getText().toString();
-                            startActivity(new Intent(AuthActivity.this, MainActivity.class));
+                            if (response.isSuccessful()){
+                                Utils.token = response.body().payload.accessToken;
+                                Utils.email = email.getText().toString();
+                                startActivity(new Intent(AuthActivity.this, MainActivity.class));
+                            }else {
+                                Toast.makeText(AuthActivity.this, "Ошибка авторизации " + response.code(), Toast.LENGTH_SHORT).show();
+                            }
+
                         }
 
                         @Override
                         public void onFailure(Call<TokenResponse> call, Throwable t) {
-
+                            Toast.makeText(AuthActivity.this, t.getMessage(), Toast.LENGTH_SHORT).show();
                         }
                     });
                 }else {

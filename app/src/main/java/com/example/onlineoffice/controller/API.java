@@ -21,24 +21,25 @@ import retrofit2.http.Query;
 
 public interface API {
 
-     @POST("/api3/auth/login")
-     Call<TokenResponse> getToken(@Body TokenRequest tokenRequest);
+    @POST("/api3/auth/login")
+    Call<TokenResponse> getToken(@Body TokenRequest tokenRequest);
 
-     @GET ("/api3/account/current")
-     Call<Profile> getProfile(@Header("Authorization") String token);
+    @GET("/api3/account/current")
+    Call<Profile> getProfile(@Header("Authorization") String token);
 
-     @POST("/api3/account/{id}/set-password")
-     Call<PswrdResponse> changePassword(@Header("Authorization") String token, @Path("id") String id, @Body Pswrd pswrd);
+    @POST("/api3/account/{id}/set-password")
+    Call<PswrdResponse> changePassword(@Header("Authorization") String token, @Path("id") String id, @Body Pswrd pswrd);
 
-     @GET("/api3/account/{id}/wallet")
-     Call<BonusResponse> getBonus(@Header("Authorization") String token, @Path("id") int id);
+    @GET("/api3/account/{id}/wallet")
+    Call<BonusResponse> getBonus(@Header("Authorization") String token, @Path("id") int id);
 
-     @GET("/api3/account/{id}/frontline")
-     Call<FrontLineResponse> getFrontLine(@Header("Authorization") String token, @Path("id") int id, @Query("limit") int limit, @Query("page") int page);
+    @GET("/api3/account/{id}/frontline")
+    Call<FrontLineResponse> getFrontLine(@Header("Authorization") String token, @Path("id") int id, @Query("limit") int limit, @Query("page") int page);
 
-     @POST("/api3/account/create")
-     Call<RegMemberResponse> regMember(@Header("Authorization") String token, @Body RegMemberBody body);
+    @POST("/api3/account/create")
+    Call<RegMemberResponse> regMember(@Header("Authorization") String token, @Body RegMemberBody body);
 
-     @GET("/api3/v2/account/{id}/downline")
-Call<DownLineResponse> getDownLine(@Header("Authorization") String token, @Path("id") int id, @Query("limit") int limit, @Query("page") int page);
+    @GET("/api3/v2/account/{id}/downline")
+    Call<DownLineResponse> getDownLine(@Header("Authorization") String token, @Path("id") int id, @Query("limit") int limit, @Query("page") int page);
+
 }

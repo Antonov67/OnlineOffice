@@ -15,4 +15,22 @@ public class List3{
     public String createdAt;
     public Account account;
     public ArrayList<Property> properties;
+
+    @Override
+    public String toString() {
+        return "List3{" +
+                "id=" + id +
+                ", level=" + level +
+                ", treeLevel=" + treeLevel +
+                ", accountId='" + accountId + '\'' +
+                ", parentPositionId=" + parentPositionId +
+                ", parentPosition=" + parentPosition +
+                ", number=" + number +
+                ", spillLeg=" + spillLeg +
+                ", childrenCount=" + childrenCount +
+                ", createdAt='" + createdAt + '\'' +
+                ", account=" + account +
+                ", properties=" + properties +
+                '}';
+    }
 }
